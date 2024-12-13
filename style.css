@@ -1,0 +1,64 @@
+:root {
+    --primary-color: #4CAF50;
+    --secondary-color: #f4f4f4;
+    --text-color: #333;
+    --font-family: 'Arial', sans-serif;
+}
+
+body {
+    margin: 0;
+    font-family: var(--font-family);
+    color: var(--text-color);
+}
+
+section {
+    padding: 20px;
+    text-align: center;
+    margin: 20px auto;
+    max-width: 800px;
+    background: var(--secondary-color);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#hero{
+    width: 100%;
+    border-radius: 10%;
+    
+    
+}
+
+section h2 {
+    margin: 15px 0;
+    color: var(--primary-color);
+}
+
+section p {
+    line-height: 1.6;
+}
+
+.ebooks {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.ebook {
+    width: calc(50% - 20px);
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: white;
+}
+
+.ebook h3 {
+    margin: 10px 0;
+}
+
+@media (max-width: 768px) {
+    .ebook {
+        width: 100%;
+    }
+}
+
